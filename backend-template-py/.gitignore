@@ -1,0 +1,29 @@
+# General
+.DS_Store
+.venv
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Certs
+*.pem
+keystore*.json
+
+# Logs
+logs
+*.log
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variable files
+.env
+.env.*
+!.env.example

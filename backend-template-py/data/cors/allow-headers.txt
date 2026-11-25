@@ -1,0 +1,2 @@
+authorization
+content-type

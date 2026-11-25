@@ -1,0 +1,13 @@
+/(?:'|"|\))\s*(?:or|and)\s+(?:'|"|\d+)/i
+/(?:--|#|\/\*)/
+/\balter\s+table\b/i
+/\bbenchmark\s*\(/i
+/\bdelete\s+from\b/i
+/\bdrop\s+(?:table|database)\b/i
+/\binsert\s+into\b/i
+/\bselect\s+.+\s+from\b/i
+/\bsleep\s*\(/i
+/\btruncate\s+table\b/i
+/\bunion\s+(?:all\s+)?select\b/i
+/\bupdate\s+.+\s+set\b/i
+/\bwaitfor\s+delay\b/i

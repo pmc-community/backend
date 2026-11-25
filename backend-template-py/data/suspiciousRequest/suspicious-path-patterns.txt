@@ -1,0 +1,15 @@
+/\.env(?:$|\/)/i
+/\.git(?:$|\/)/i
+/\.hg(?:$|\/)/i
+/\.svn(?:$|\/)/i
+/actuator/i
+/adminer/i
+/cgi-bin/i
+/etc\/passwd/i
+/etc\/shadow/i
+/phpmyadmin/i
+/server-info/i
+/server-status/i
+/wp-admin/i
+/wp-login/i
+/xmlrpc\.php/i
