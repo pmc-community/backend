@@ -1,0 +1,6 @@
+delete
+get
+options
+patch
+post
+put

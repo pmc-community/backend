@@ -1,0 +1,15 @@
+# Lines starting with # are comments — ignored entirely
+
+# Exact filename match — skips any file/folder with this exact name,
+# anywhere under src/routes
+schema.ts
+types.ts
+utils.ts
+helpers.ts
+
+# Exact folder name match — skips the whole folder and everything inside it
+__tests__
+
+# Glob patterns using * as a wildcard — matches any filename fitting the pattern
+*.test.ts
+*.spec.ts

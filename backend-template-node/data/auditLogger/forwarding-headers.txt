@@ -1,0 +1,11 @@
+cf-connecting-ip
+cf-pseudo-ipv4
+fastly-client-ip
+forwarded
+true-client-ip
+x-client-ip
+x-forwarded-for
+x-originating-ip
+x-real-ip
+x-remote-addr
+x-remote-ip

@@ -1,0 +1,4 @@
+/[\u0000-\u001f\u007f]/
+/^(.)\1{7,}$/
+/^(?:unknown|null|undefined|none|n\/a|na|test|testing|default)$/i
+/^[a-z]{4,12}$/i

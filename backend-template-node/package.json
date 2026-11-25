@@ -1,0 +1,31 @@
+{
+  "name": "backend-template",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:lists": "tsx scripts/build-lists.ts",
+    "postinstall": "tsx scripts/generate-routes.ts",
+    "prebuild": "npm run build:lists && tsx scripts/generate-routes.ts",
+    "dev": "npm run clean  && npm run prebuild && tsx watch --env-file=.env server.ts",
+    "start": "npm run build && node --env-file=.env -e \"const fs=require('node:fs'); \" && cd dist && node --env-file=.env server.js",
+    "build": "npm run clean && tsx build.ts && cp -R data dist/data && find . -maxdepth 1 -type f \\( -iname '*.pem' -o -iname 'keystore.json' -o -iname '.env' \\) -exec cp {} dist/ \\;"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.1",
+    "@hono/zod-validator": "^0.9.1",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "hono": "^4.13.7",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^26.5.1",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.131.1"
+  }
+}

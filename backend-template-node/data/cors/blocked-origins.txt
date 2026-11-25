@@ -1,0 +1,2 @@
+https://blocked-site.local
+https://evil.example.com

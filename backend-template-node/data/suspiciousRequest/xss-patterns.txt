@@ -1,0 +1,10 @@
+/<\s*\/\s*script\s*>/i
+/<\s*embed\b/i
+/<\s*iframe\b/i
+/<\s*object\b/i
+/<\s*script\b/i
+/<\s*svg\b[^>]*\bon\w+\s*=/i
+/\bon(?:error|load|click|mouseover|focus|blur|submit)\s*=/i
+/data\s*:\s*text\/html/i
+/javascript\s*:/i
+/vbscript\s*:/i
